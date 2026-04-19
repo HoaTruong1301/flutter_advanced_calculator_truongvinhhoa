@@ -1,32 +1,32 @@
-# Testing Document
+# Tài liệu Kiểm thử
 
-## Strategy
-We use unit testing to verify the mathematical core of the application. The goal is to ensure >80% coverage of the calculation logic.
+## Chiến lược
+Chúng tôi sử dụng kiểm thử đơn vị (Unit Testing) để xác minh lõi toán học của ứng dụng. Mục tiêu là đảm bảo độ bao phủ (coverage) >80% cho logic tính toán.
 
-## Test Cases
+## Các kịch bản kiểm thử
 
-### 1. Basic Arithmetic
+### 1. Số học cơ bản
 - `5 + 3 = 8`
 - `10 - 4 = 6`
 - `6 * 7 = 42`
 - `15 / 3 = 5`
 
-### 2. Order of Operations (PEMDAS)
+### 2. Thứ tự thực hiện phép tính (PEMDAS)
 - `2 + 3 * 4 = 14`
 - `(2 + 3) * 4 = 20`
 
-### 3. Scientific Functions
-- `sin(30) = 0.5` (Degree mode)
+### 3. Các hàm khoa học
+- `sin(30) = 0.5` (Chế độ Độ - Degree)
 - `sqrt(16) = 4`
 - `2 * pi * sqrt(9) ≈ 18.85`
 
-### 4. Edge Cases
-- Division by zero: `5 / 0` -> Returns "Error"
-- Negative square root: `sqrt(-4)` -> Returns "Error"
+### 4. Các trường hợp biên (Edge Cases)
+- Chia cho 0: `5 / 0` -> Trả về "Error"
+- Căn bậc hai số âm: `sqrt(-4)` -> Trả về "Error"
 
-## How to run tests
-1. Open terminal in the project root.
-2. Run the following command:
+## Cách chạy kiểm thử
+1. Mở terminal tại thư mục gốc của dự án.
+2. Chạy lệnh sau:
 ```bash
 flutter test
 ```
