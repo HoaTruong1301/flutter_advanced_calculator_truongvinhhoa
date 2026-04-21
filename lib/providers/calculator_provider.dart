@@ -143,7 +143,7 @@ class CalculatorProvider extends ChangeNotifier {
   void press(String value) {
     _hasError = false;
     
-    if (value == 'C') {
+    if (value == 'C' || value == 'AC') {
       _expression = '';
       _result = '0';
       _previousResult = '';
